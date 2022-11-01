@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function Main() {
   return (
     <>
-      <div className='bg-white pb-6 sm:pb-8 lg:pb-0 flex text-center'>
+      <div className='pb-6 sm:pb-8 lg:pb-0 flex text-center'>
         <div className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
           <section className='flex flex-col lg:flex-row gap-6 sm:gap-10 md:gap-16'>
             {/* <!-- content - start --> */}
             <div className='xl:w-7/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-12 xl:py-24'>
-              <p className='text-indigo-500 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6'>
+              <p className='text-violet-700 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6'>
                 Very proud to introduce
               </p>
 
@@ -29,10 +29,7 @@ export default function Main() {
               </p>
 
               <div className='flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2.5'>
-                <Link
-                  href='projects'
-                  className='inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3'
-                >
+                <Link href='projects' className='btn-project'>
                   프로젝트 보러가기
                 </Link>
               </div>

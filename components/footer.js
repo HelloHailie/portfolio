@@ -1,15 +1,14 @@
 export default function Footer() {
   return (
     <>
-      <div className='bg-white pt-4 sm:pt-10 lg:pt-12'>
-        <footer className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
+      <div className='pt-4 '>
+        <footer className='max-w-screen-1xl px-4 md:px-8 mx-auto'>
           <div className='flex flex-col items-center border-t pt-6'>
             <div className='flex gap-4'>
               <a
                 href='https://shinystarforever.tistory.com/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100'
               >
                 <svg
                   className='w-5 h-5'
@@ -27,7 +26,6 @@ export default function Footer() {
                 href='mailto:alsltjsals@gmail.com'
                 rel='noopener noreferrer'
                 target='_blank'
-                className='text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100'
               >
                 <svg
                   className='w-5 h-5'
@@ -47,7 +45,6 @@ export default function Footer() {
                 href='https://www.linkedin.com/in/seonmin-lee-005a71246/'
                 rel='noopener noreferrer'
                 target='_blank'
-                className='text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100'
               >
                 <svg
                   className='w-5 h-5'
@@ -65,7 +62,6 @@ export default function Footer() {
                 href='https://github.com/HelloHailie'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100'
               >
                 <svg
                   className='w-5 h-5'
