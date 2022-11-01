@@ -1,4 +1,5 @@
 import Animation from "../home/animation";
+import Link from "next/link";
 
 export default function Main() {
   return (
@@ -28,12 +29,12 @@ export default function Main() {
               </p>
 
               <div className='flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2.5'>
-                <a
-                  href='#'
+                <Link
+                  href='projects'
                   className='inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3'
                 >
                   프로젝트 보러가기
-                </a>
+                </Link>
               </div>
             </div>
             {/* <!-- content - end --> */}
