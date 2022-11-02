@@ -5,7 +5,6 @@ import axios from "axios";
 import ProjectItem from "../components/projects/projectItem";
 
 export default function Projects({ projects }) {
-  // console.log(projects);
   return (
     <Layout>
       <div className='flex flex-col items-center justify-center min-h-screen mb-10 px-10'>
@@ -15,10 +14,12 @@ export default function Projects({ projects }) {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <h1 className='text-4xl sm:text-6xl py-5 flex justify-center '>
-          <span className='text-violet-600 font-bold'>
+          <span className='italic'>I have </span>
+
+          <span className='text-violet-600 font-bold italic'>
             {projects.results.length}
           </span>
-          개의 프로젝트가 있습니다.
+          <span className='italic'> projects</span>
         </h1>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 m-6 py-10 w-full'>
           {projects.results.map((aProject) => (
@@ -60,9 +61,6 @@ export async function getStaticProps() {
   const projectNames = projects.results.map((aProject) =>
     aProject.properties.Name.title.map((e) => e.plain_text)
   );
-
-  // console.log(`projectNames : ${projects}`)
-  console.log(projects.length);
 
   // const options = {
   //   method: "POST",

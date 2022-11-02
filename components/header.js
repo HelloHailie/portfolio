@@ -4,7 +4,7 @@ import DarkModeBtn from "./darkModeBtn";
 export default function Header() {
   return (
     <>
-      <header className='body-font'>
+      <header className='body-font bg-gray-100 dark:bg-slate-600/20'>
         <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
           <Link
             href='/'
@@ -36,6 +36,9 @@ export default function Header() {
             </Link>
             <Link href='/skills' className='mr-5 hover:text-gray-900'>
               Skills
+            </Link>
+            <Link href='/contact-me' className='mr-5 hover:text-gray-900'>
+              Contact Me
             </Link>
           </nav>
           {/* 버튼자리 */}
