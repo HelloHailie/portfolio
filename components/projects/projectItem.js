@@ -5,6 +5,7 @@ export default function ProjectItem({ data }) {
   const description = data.properties.Description.rich_text[0].text.content;
   const github = data.properties.Github.url;
   const utube = data.properties.Utube.url;
+  const notion = data.properties.Notion.url;
   const imgSrc = data.cover.file?.url || data.cover.external.url;
   const tags = data.properties.Tags.multi_select;
   const startDate = data.properties.WorkPeriod.date.start;
@@ -50,17 +51,20 @@ export default function ProjectItem({ data }) {
         <h1 className='text-2xl font-bold'>{title}</h1>
         <h3 className='mt-4'>{description}</h3>
 
-        <a href={github}>깃허브 링크 바로가기</a>
-        <a href={utube}>유튜브 시연영상 바로가기</a>
-        <p className='my-2'>
+        <a href={github}>🔗 깃허브 링크 바로가기</a>
+
+        {notion ? <a href={notion}>🔗 노션 링크 바로가기</a> : null}
+
+        {utube ? <a href={utube}>🔗 유튜브 시연영상 바로가기</a> : null}
+        <h4 className='my-2'>
           작업 기간 : {startDate} ~ {endDate} (
           {calculatedPeriod(startDate, endDate)}
           일)
-        </p>
+        </h4>
         <div className='flex items-start mt-2 overflow-auto'>
           {tags.map((aTag) => (
             <h1
-              className='px-1 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30 '
+              className='px-1 py-1 mr-2 rounded-md bg-violet-600 dark:bg-violet-500 text-white w-30 '
               key={aTag.id}
             >
               {aTag.name}

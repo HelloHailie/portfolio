@@ -15,7 +15,7 @@ export default function Projects({ projects }) {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <h1 className='text-4xl sm:text-6xl py-5 flex justify-center '>
-          <span className='text-blue-700 font-bold'>
+          <span className='text-violet-600 font-bold'>
             {projects.results.length}
           </span>
           개의 프로젝트가 있습니다.
