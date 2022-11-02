@@ -57,7 +57,7 @@ export default function ProjectItem({ data }) {
           {calculatedPeriod(startDate, endDate)}
           일)
         </p>
-        <div className='flex items-start mt-2 md:overflow-auto sm:overflow-auto'>
+        <div className='flex items-start mt-2 overflow-auto'>
           {tags.map((aTag) => (
             <h1
               className='px-1 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30 '
