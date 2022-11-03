@@ -2,14 +2,18 @@ import Image from "next/image";
 
 export default function ProjectItem({ data }) {
   const title = data.properties.Name.title[0].plain_text;
-  const description = data.properties.Description.rich_text[0].text.content;
+  const description = data.properties.Description.rich_text[0].plain_text;
   const github = data.properties.Github.url;
   const utube = data.properties.Utube.url;
   const notion = data.properties.Notion.url;
+  const distribution = data.properties.Distribution.url;
   const imgSrc = data.cover.file?.url || data.cover.external.url;
   const tags = data.properties.Tags.multi_select;
   const startDate = data.properties.WorkPeriod.date.start;
   const endDate = data.properties.WorkPeriod.date.end;
+  const team = data.properties.team.rich_text[0].plain_text;
+  const role = data.properties.role.rich_text[0].plain_text;
+  const operation = data.properties.operation.rich_text[0].plain_text;
 
   const calculatedPeriod = (start, end) => {
     const startDateStringArray = start.split("-");
@@ -34,20 +38,35 @@ export default function ProjectItem({ data }) {
 
   return (
     <div className='project-card'>
-      <Image
-        className='rounded-t-xl'
-        src={imgSrc}
-        width='100'
-        height='100'
-        alt='project cover image'
-        layout='responsive'
-        objectFit='none'
-        quality={100}
-      />
+      <a href={distribution}>
+        <Image
+          className='rounded-t-xl'
+          src={imgSrc}
+          width='100'
+          height='100'
+          alt='project cover image'
+          layout='responsive'
+          objectFit='none'
+          quality={100}
+        />
+      </a>
       <div className='p-4 flex flex-col'>
         <h1 className='text-2xl font-bold'>{title}</h1>
-        <h3 className='mt-4'>{description}</h3>
+        <h3 className='mt-4 text-lg'>{description}</h3>
+        {team === "개인" ? (
+          <h3 className='mt-3 mb-1'>개인 프로젝트</h3>
+        ) : (
+          <h3 className='mt-3'>팀: {team}</h3>
+        )}
 
+        {role === "개인" ? null : <h3 className='mt-1 mb-1'>역할: {role}</h3>}
+
+        {operation === "개인" ? null : (
+          <div className='mt-1 mb-4 bg-violet-100 rounded p-2 dark:text-violet-900'>
+            {operation}
+          </div>
+        )}
+        <a href={distribution}>🔗 배포 링크 바로가기</a>
         <a href={github}>🔗 깃허브 링크 바로가기</a>
 
         {notion ? <a href={notion}>🔗 노션 링크 바로가기</a> : null}

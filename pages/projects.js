@@ -44,7 +44,7 @@ export async function getStaticProps() {
     data: JSON.stringify({
       sorts: [
         {
-          property: "순서",
+          property: "order",
           direction: "descending",
         },
       ],

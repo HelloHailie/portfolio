@@ -13,15 +13,18 @@ export default function AboutMe() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section className='text-gray-600 body-font'>
-        <div className='container mx-auto flex px-5 py-24 items-center justify-center flex-col'>
-          <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
-            안녕하세요 개발자 이선민입니다
-          </h1>
-          <p className='mb-20 leading-relaxed'>
-            커뮤니케이션의 중요성을 믿고, 다수의 더 나은 삶을 위해 매일매일
-            배웁니다.
-          </p>
-          <div className='flex lg:flex-row flex-col gap-8'>
+        <div className='container mx-auto flex px-5 py-24 items-center justify-center flex-col gap-5'>
+          <div>
+            <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
+              안녕하세요 개발자 이선민입니다
+            </h1>
+            <p className='mb-20 leading-relaxed'>
+              커뮤니케이션의 중요성을 믿고, 다수의 더 나은 삶을 위해 매일매일
+              배웁니다.
+            </p>
+          </div>
+
+          <div className='flex lg:flex-row flex-col gap-16 items-center'>
             <div className='lg:w-2/5 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded'>
               <Image
                 src={profile}
@@ -31,8 +34,8 @@ export default function AboutMe() {
               />
             </div>
             <div className='flex flex-col'>
-              <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium underline italic'>
-                학력
+              <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium underline'>
+                🎓학력
               </h1>
               <div className='font-semibold text-xl'>
                 코드스테이츠 (Code States)
@@ -59,8 +62,8 @@ export default function AboutMe() {
                 <li>교내 성적 장학금 다수</li>
                 <li>2015년 1년 간 중국 교환학생 및 유학생 성적 우수상 수상</li>
               </ul>
-              <h3 className='title-font sm:text-4xl text-3xl mb-4 font-medium underline italic'>
-                업무경력
+              <h3 className='title-font sm:text-4xl text-3xl mb-4 font-medium underline'>
+                💼업무경력
               </h3>
               <div className='font-semibold text-xl'>
                 헬만월드와이드로지스틱스 (Hellmann Worldwide Logistics)
@@ -70,8 +73,8 @@ export default function AboutMe() {
               <p className='leading-relaxed'>2018.10 ~ 2021.10</p>
               <ul class='list-disc list-inside mb-9'>
                 <li>
-                  화주, 해외지사와의 원활한 커뮤니케이션을 통해 화물이 안전하게
-                  고객사가 원하는 곳에 적시에 운반되도록하는 역할
+                  화주, 해외지사와의 커뮤니케이션을 통해 화물이 안전하게
+                  고객사가 원하는 곳에 적시에 운반되도록 함
                 </li>
                 <li>
                   항공사 부킹 및 스케줄 관리하면서 다소 타이트한 일정이더라도
