@@ -14,12 +14,12 @@ export default function Projects({ projects }) {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <h1 className='text-4xl sm:text-6xl py-5 flex justify-center '>
-          <span className='italic'>I have </span>
+          <span className='italic'>I have&nbsp;</span>
 
           <span className='text-violet-600 font-bold italic'>
             {projects.results.length}
           </span>
-          <span className='italic'> projects</span>
+          <span className='italic'>&nbsp;projects</span>
         </h1>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 m-6 py-10 w-full'>
           {projects.results.map((aProject) => (
@@ -34,62 +34,26 @@ export default function Projects({ projects }) {
 export async function getStaticProps() {
   const options = {
     method: "POST",
+    url: `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
     headers: {
       accept: "application/json",
       "Notion-Version": "2022-02-22",
       "content-type": "application/json",
       authorization: `Bearer ${TOKEN}`,
     },
-    body: JSON.stringify({
+    data: JSON.stringify({
       sorts: [
         {
-          property: "Name",
-          direction: "ascending",
+          property: "순서",
+          direction: "descending",
         },
       ],
       page_size: 100,
     }),
   };
 
-  const res = await fetch(
-    `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
-    options
-  );
-
-  const projects = await res.json();
-
-  const projectNames = projects.results.map((aProject) =>
-    aProject.properties.Name.title.map((e) => e.plain_text)
-  );
-
-  // const options = {
-  //   method: "POST",
-  //   url: `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
-  //   headers: {
-  //     accept: "application/json",
-  //     "Notion-Version": "2022-02-22",
-  //     "content-type": "application/json",
-  //     authorization: `Bearer ${TOKEN}`,
-  //   },
-  //   data: { page_size: 100 },
-  // };
-
-  // await axios
-  //   .request(options)
-  //   .then(function (response) {
-  //     const projects = response.data;
-
-  //     console.log(projects);
-
-  //     const projectIds = projects.results.map(
-  //       (aProject) => aProject.properties.Name.title
-  //     );
-
-  //     console.log(`projectIds : ${projectIds}`);
-  //   })
-  //   .catch(function (error) {
-  //     console.error(error);
-  //   });
+  const res = await axios.request(options);
+  const projects = await res.data;
 
   return {
     props: { projects }, // will be passed to the page component as props
