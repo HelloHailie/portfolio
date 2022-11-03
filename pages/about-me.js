@@ -40,7 +40,9 @@ export default function AboutMe() {
               <div className='font-semibold text-xl'>
                 코드스테이츠 (Code States)
               </div>
-              <div>Advanced software engineering, Immersive program (39기)</div>
+              <div className='italic'>
+                Advanced software engineering, Immersive program (39기)
+              </div>
               <p className='leading-relaxed'>2022.04 - 2022.10</p>
               <ul class='list-disc list-inside mb-9'>
                 <li>
@@ -55,7 +57,9 @@ export default function AboutMe() {
               <div className='font-semibold text-xl'>
                 덕성여자대학교 (Duksung Women’s University)
               </div>
-              <div>중어중문학 전공, 글로벌통상법무연계전공 복수전공</div>
+              <div className='italic'>
+                중어중문학 전공, 글로벌통상법무연계전공 복수전공
+              </div>
 
               <p className='leading-relaxed'>2013.03 - 2018.08</p>
               <ul class='list-disc list-inside mb-9'>
@@ -68,7 +72,7 @@ export default function AboutMe() {
               <div className='font-semibold text-xl'>
                 헬만월드와이드로지스틱스 (Hellmann Worldwide Logistics)
               </div>
-              <div>항공수출오퍼레이터</div>
+              <div className='italic'>항공수출오퍼레이터</div>
 
               <p className='leading-relaxed'>2018.10 ~ 2021.10</p>
               <ul class='list-disc list-inside mb-9'>
