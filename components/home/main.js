@@ -8,7 +8,7 @@ export default function Main() {
         <div className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
           <section className='flex flex-col lg:flex-row gap-6 sm:gap-10 md:gap-16'>
             <div className='xl:w-7/12 flex flex-col sm:text-center lg:text-left lg:py-12 xl:py-24'>
-              <p className='text-violet-700 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6'>
+              <p className='text-violet-700 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6 mt-6'>
                 Frontend-Developer
               </p>
 
@@ -39,7 +39,7 @@ export default function Main() {
               </div>
             </div>
 
-            <div className='h-48 lg:h-auto flex items-center lg:max-w-2xl'>
+            <div className='h-48 lg:h-auto lg:flex lg:items-center lg:max-w-2xl max-w-fit'>
               <Animation />
             </div>
           </section>

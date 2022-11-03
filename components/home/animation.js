@@ -9,7 +9,6 @@ export default function Animation() {
       loop={true}
       controls={true}
       src={lottieJson}
-      // style={{ height: "600px", width: "700px" }}
     ></Player>
   );
 }
