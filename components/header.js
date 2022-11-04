@@ -17,7 +17,7 @@ export default function Header() {
               strokeLinecap='round'
               strokeLinejoin='round'
               strokeWidth='2'
-              className='w-10 h-10 text-white p-2 bg-indigo-500 rounded-full'
+              className='w-10 h-10 p-2 rounded-full  text-white dark:text-white bg-violet-700 dark:bg-violet-500 hover:text-white hover:bg-violet-500'
               viewBox='0 0 24 24'
             >
               <path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'></path>
@@ -25,19 +25,22 @@ export default function Header() {
             <span className='ml-3 text-xl'>이선민 포트폴리오</span>
           </Link>
           <nav className='md:ml-auto flex flex-wrap items-center text-base justify-center'>
-            <Link href='/' className='mr-5 hover:text-gray-900'>
+            <Link href='/' className='mr-5 hover:text-gray-900 text-xl'>
               Home
             </Link>
-            <Link href='/about-me' className='mr-5 hover:text-gray-900'>
+            <Link href='/about-me' className='mr-5 hover:text-gray-900 text-xl'>
               About Me
             </Link>
-            <Link href='/projects' className='mr-5 hover:text-gray-900'>
+            <Link href='/projects' className='mr-5 hover:text-gray-900 text-xl'>
               Projects
             </Link>
-            <Link href='/skills' className='mr-5 hover:text-gray-900'>
+            <Link href='/skills' className='mr-5 hover:text-gray-900 text-xl'>
               Skills
             </Link>
-            <Link href='/contact-me' className='mr-5 hover:text-gray-900'>
+            <Link
+              href='/contact-me'
+              className='mr-5 hover:text-gray-900 text-xl'
+            >
               Contact Me
             </Link>
           </nav>
