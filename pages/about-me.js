@@ -34,8 +34,8 @@ export default function AboutMe() {
               />
             </div>
             <div className='flex flex-col'>
-              <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium underline'>
-                🎓학력
+              <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium bg-slate-100 dark:bg-slate-700'>
+                🎓 학력
               </h1>
               <div className='font-semibold text-xl'>
                 코드스테이츠 (Code States)
@@ -66,8 +66,8 @@ export default function AboutMe() {
                 <li>교내 성적 장학금 다수</li>
                 <li>2015년 1년 간 중국 교환학생 및 유학생 성적 우수상 수상</li>
               </ul>
-              <h3 className='title-font sm:text-4xl text-3xl mb-4 font-medium underline'>
-                💼업무경력
+              <h3 className='title-font sm:text-4xl text-3xl mb-4 font-medium  bg-slate-100  dark:bg-slate-700'>
+                💼 업무경력
               </h3>
               <div className='font-semibold text-xl'>
                 헬만월드와이드로지스틱스 (Hellmann Worldwide Logistics)
@@ -110,16 +110,12 @@ export default function AboutMe() {
               조직과 서비스를 만든다고 생각하기에 여러 의견을 듣고 조율할 수
               있는 개발자가 되고 싶습니다.
             </p>
-            <div className='flex justify-center gap-4'>
+            <div className='flex flex-col sm:flex-row sm:justify-center lg:justify-center gap-2.5'>
               <Link href='/skills' className='btn-project'>
-                기술스택
-                <br className='inline-block md:hidden' />
-                보러가기
+                기술스택 보러가기
               </Link>
               <Link href='/projects' className='btn-project'>
-                프로젝트
-                <br className='inline-block md:hidden' />
-                보러가기
+                프로젝트 보러가기
               </Link>
             </div>
           </div>

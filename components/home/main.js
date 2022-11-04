@@ -29,7 +29,7 @@ export default function Main() {
                 </div>
               </p>
 
-              <div className='flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2.5'>
+              <div className='flex flex-col sm:flex-row gap-2.5'>
                 <Link href='about-me' className='btn-project'>
                   자기소개 바로가기
                 </Link>
