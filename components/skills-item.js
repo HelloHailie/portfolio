@@ -34,7 +34,7 @@ const frontSkillsItem = [
       alt='zustand image'
       width={50}
       height={50}
-      key={Zustand}
+      key={zustand}
     />,
     "Zustand",
     "사용하기 쉽고, 불필요한 렌더링을 줄일 수 있는 Zustand를 사용하여 상태관리를 한 경험이 있습니다.",
