@@ -4,10 +4,10 @@ import Link from "next/link";
 export default function Main() {
   return (
     <>
-      <div className='pb-6 sm:pb-8 lg:pb-0 flex text-center'>
+      <div className='pb-6 sm:pb-8 lg:pb-0 flex text-center justify-center'>
         <div className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
-          <section className='flex flex-col lg:flex-row gap-6 sm:gap-10 md:gap-16'>
-            <div className='xl:w-7/12 flex flex-col sm:text-center lg:text-left lg:py-12 xl:py-24'>
+          <section className='flex flex-col lg:flex-row sm:gap-10'>
+            <div className='xl:w-3/5 flex flex-col sm:text-center lg:text-left lg:py-12 xl:py-24'>
               <p className='text-violet-700 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6 mt-6'>
                 Frontend-Developer
               </p>
@@ -29,7 +29,7 @@ export default function Main() {
                 </div>
               </p>
 
-              <div className='flex flex-col sm:flex-row gap-2.5'>
+              <div className='flex flex-col sm:flex-row gap-2.5 sm:justify-center lg:justify-start'>
                 <Link href='about-me' className='btn-project'>
                   자기소개 바로가기
                 </Link>
