@@ -12,15 +12,15 @@ export default function Header() {
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              fill='none'
+              fill='currentcolor'
               stroke='currentColor'
               strokeLinecap='round'
               strokeLinejoin='round'
               strokeWidth='2'
-              className='w-10 h-10 p-2 rounded-full  text-white dark:text-white bg-violet-700 dark:bg-violet-500 hover:text-white hover:bg-violet-500'
+              className='w-10 h-10 p-2 rounded-full text-white dark:text-white bg-violet-700 dark:bg-violet-500 hover:text-white hover:bg-violet-500'
               viewBox='0 0 24 24'
             >
-              <path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'></path>
+              <path d='M21.92,6.62a1,1,0,0,0-.54-.54A1,1,0,0,0,21,6H16a1,1,0,0,0,0,2h2.59L13,13.59l-3.29-3.3a1,1,0,0,0-1.42,0l-6,6a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L9,12.41l3.29,3.3a1,1,0,0,0,1.42,0L20,9.41V12a1,1,0,0,0,2,0V7A1,1,0,0,0,21.92,6.62Z' />
             </svg>
             <span className='ml-3 text-xl'>이선민 포트폴리오</span>
           </Link>
