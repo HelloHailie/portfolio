@@ -16,7 +16,7 @@ export default function Main() {
                 프론트엔드 개발자 이선민
               </h1>
 
-              <p className='lg:w-4/5 xl:text-lg leading-relaxed mb-8 md:mb-12'>
+              <div className='lg:w-4/5 xl:text-lg leading-relaxed mb-8 md:mb-12'>
                 <div className='pb-3'>
                   💜 안녕하세요. 트랜디한 개발자가 되고자 노력하는 이선민입니다.
                 </div>
@@ -27,7 +27,7 @@ export default function Main() {
                   💜 배움에는 완벽이 없다고 생각하고 계속 공부하며 여러가지
                   경험을 하고 있습니다.
                 </div>
-              </p>
+              </div>
 
               <div className='flex flex-col sm:flex-row gap-2.5 sm:justify-center lg:justify-start'>
                 <Link href='about-me' className='btn-project'>
