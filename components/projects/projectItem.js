@@ -56,10 +56,10 @@ export default function ProjectItem({ data }) {
         {team === "개인" ? (
           <h3 className='mt-3 mb-1'>개인 프로젝트</h3>
         ) : (
-          <h3 className='mt-3'>팀: {team}</h3>
+          <h3 className='mt-3'>팀 프로젝트: {team}</h3>
         )}
 
-        {role === "개인" ? null : <h3 className='mt-1 mb-1'>역할: {role}</h3>}
+        {role === "개인" ? null : <h3 className='mt-1 mb-1'>{role}</h3>}
 
         {operation === "개인" ? null : (
           <div className='mt-1 mb-4 bg-violet-100 rounded p-2 dark:text-violet-900'>

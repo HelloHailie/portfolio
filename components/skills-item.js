@@ -42,12 +42,12 @@ const frontSkillsItem = [
   [
     <StyledComponet key={StyledComponet} />,
     "Styled-component",
-    "컴포넌트 별로 바로 CSS를 작성하여 직관적으로 확인할 수 있어서 React를 사용한 프로젝트에서 사용한 경험이 있습니다.",
+    "컴포넌트별로 CSS를 작성하여 직관적으로 확인할 수 있는 장점이 있어서 React를 사용한 프로젝트에서 사용한 경험이 있습니다.",
   ],
   [
     <TailwindCSS key={TailwindCSS} />,
     "TailwindCSS",
-    " html에서 클래스명 하나로 style이 지정 가능하여 Nest.js를 사용한 프로젝트에서 tailwind CSS를 사용한 경험이 있습니다.",
+    "html에서 클래스 명 하나로 style을 지정할 수 있는 장점이 있어서 Nest.js를 사용한 프로젝트에서 tailwind CSS를 사용한 경험이 있습니다.",
   ],
 ];
 
@@ -55,7 +55,7 @@ const etcSkillsItem = [
   [
     <Github key={Github} />,
     "Github",
-    " Git Commit convention을 통한 협업 경험이 있고, 칸반 보드를 활용하여 업무 시각화 경험이 있습니다.",
+    "Git Commit convention을 통한 협업 경험이 있고, 칸반 보드를 활용하여 업무 시각화 경험이 있습니다.",
   ],
   [
     <Figma key={Figma} />,
@@ -70,7 +70,7 @@ const etcSkillsItem = [
   [
     <Notion key={Notion} />,
     "Notion",
-    "노션을 통한 프로젝트 일정 관리와 회의록 작성을 하여 팀 문서를 정리한 경험이 있습니다.",
+    "노션을 이용한 프로젝트 일정 관리와 회의록 작성을 하는 등 팀 문서를 정리한 경험이 있습니다.",
   ],
   [<Aws key={Aws} />, "AWS", "AWS S3을 통한 프로젝트 배포 경험이 있습니다."],
   [
