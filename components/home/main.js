@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Main() {
   return (
-    <>
+    <div>
       <div className='pb-6 sm:pb-8 lg:pb-0 flex text-center justify-center'>
         <div className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
           <section className='flex flex-col lg:flex-row sm:gap-10'>
@@ -45,6 +45,6 @@ export default function Main() {
           </section>
         </div>
       </div>
-    </>
+    </div>
   );
 }
