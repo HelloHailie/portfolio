@@ -78,14 +78,8 @@ export default function AboutMe() {
 
               <p className='leading-relaxed'>2018.10 ~ 2021.10</p>
               <ul class='list-disc list-inside mb-9'>
-                <li>
-                  화주, 해외지사와의 커뮤니케이션을 통해 화물이 안전하게
-                  고객사가 원하는 곳에 운반되도록 함
-                </li>
-                <li>
-                  항공사 부킹 및 스케줄 관리하면서 다소 타이트한 일정이더라도
-                  이상 없이 진행되도록 함
-                </li>
+                <li>화주, 해외지사와의 커뮤니케이션을 통한 화물 운송 관리</li>
+                <li>고객 맞춤식 스케줄 조율 및 관리</li>
               </ul>
             </div>
           </div>

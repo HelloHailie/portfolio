@@ -21,7 +21,7 @@ export default function Projects({ projects }) {
           </span>
           <span className='italic'>&nbsp;projects</span>
         </h1>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 m-6 py-10 w-full'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 m-6 py-10 w-full'>
           {projects.results.map((aProject) => (
             <ProjectItem data={aProject} key={aProject.id} />
           ))}
