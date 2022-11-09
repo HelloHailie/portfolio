@@ -23,7 +23,7 @@ export default function Footer() {
               </a>
 
               <a
-                href='mailto:dev_seonmin@kakao.com'
+                href='mailto:dev.seonmin@gmail.com'
                 rel='noopener noreferrer'
                 target='_blank'
               >

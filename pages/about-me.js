@@ -24,7 +24,7 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <div className='flex lg:flex-row flex-col gap-16 items-center'>
+          <div className='flex lg:flex-row flex-col items-center justify-evenly lg:w-4/5 w-full'>
             <div className='lg:w-2/5 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded'>
               <Image
                 src={profile}
@@ -33,7 +33,7 @@ export default function AboutMe() {
                 layout='responsive'
               />
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col leading-relaxed'>
               <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium bg-slate-100 dark:bg-slate-700'>
                 🎓 학력
               </h1>
@@ -44,7 +44,7 @@ export default function AboutMe() {
                 Software Engineering Bootcamp Frontend 39기
               </div>
               <p className='leading-relaxed'>2022.04 - 2022.10</p>
-              <ul class='list-disc list-inside mb-9'>
+              <ul className='list-disc list-inside mb-9'>
                 <li>
                   Javascript 기반으로 학습하고, React로 프론트엔드 과정 학습
                 </li>
@@ -62,7 +62,7 @@ export default function AboutMe() {
               </div>
 
               <p className='leading-relaxed'>2013.03 - 2018.08</p>
-              <ul class='list-disc list-inside mb-9'>
+              <ul className='list-disc list-inside mb-9'>
                 <li>교내 성적 장학금 다수</li>
                 <li>
                   2015년 1년간 중국 교환학생 경험과 유학생 성적 우수상 수상
@@ -77,9 +77,9 @@ export default function AboutMe() {
               <div className='italic'>항공수출오퍼레이터</div>
 
               <p className='leading-relaxed'>2018.10 ~ 2021.10</p>
-              <ul class='list-disc list-inside mb-9'>
+              <ul className='list-disc list-inside mb-9'>
                 <li>화주, 해외지사와의 커뮤니케이션을 통한 화물 운송 관리</li>
-                <li>고객 맞춤식 스케줄 조율 및 관리</li>
+                <li>수출 서류 관리 및 daily KPI Report 관리</li>
               </ul>
             </div>
           </div>
@@ -88,11 +88,11 @@ export default function AboutMe() {
               🎙왜 개발자가 되고 싶나요?
             </h3>
             <p className='mt-4 mb-8 leading-relaxed text-left'>
-              서로의 코드를 공유하고 리뷰하며 모두가 윈윈하는 팀 문화가 있는
-              곳에서 일하며 성장하고 싶은 욕심에 개발자라는 직업에 관심이
-              생겼습니다. 개발을 배우며 주어진 일만을 수행하는 것보다 더 나은
-              서비스를 만들고자 치열하게 고민한다는 점이 매력적이어서 개발자가
-              되기로 결심했습니다.
+              문제를 해결해나가는 과정에서 굉장한 뿌듯함을 느끼고 꾸준히
+              공부하는 것을 좋아하는 나와 잘 맞다고 생각하기에 개발자가 잘
+              어울린다고 생각합니다. 그리고 주어진 일만을 수행하는 것보다 더
+              나은 서비스를 만들고자 치열하게 고민한다는 점이 매력적이어서
+              개발자가 되고 싶습니다.
             </p>
             <h3 className='text-3xl font-bold text-left'>
               🎙어떤 개발자가 되고 싶은가요?

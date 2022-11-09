@@ -40,7 +40,7 @@ export default function ContactMe() {
               </div>
               <div className='ml-5'>
                 <a
-                  href='mailto:dev_seonmin@kakao.com'
+                  href='mailto:dev.seonmin@gmail.com'
                   rel='noopener noreferrer'
                   target='_blank'
                 >
@@ -48,12 +48,12 @@ export default function ContactMe() {
                     className='text-gray-900 font-medium text-xl hover:underline transition duration-300 transform 
                     hover:scale-[1.02] hover:text-violet-600 dark:hover:text-violet-400'
                   >
-                    dev.seonmin@kakao.com
+                    dev.seonmin@gmail.com
                   </h2>
                 </a>
               </div>
             </div>
-            <div className='flex mb-5 items-center flex-row'>
+            {/* <div className='flex mb-5 items-center flex-row'>
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-violet-200 text-violet-700  dark:text-violet-800'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -71,7 +71,7 @@ export default function ContactMe() {
                   Please contact me by email
                 </h2>
               </div>
-            </div>
+            </div> */}
             <div className='flex mb-5 items-center flex-row'>
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-violet-200 text-violet-700  dark:text-violet-800'>
                 <svg
