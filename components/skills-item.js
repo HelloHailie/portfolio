@@ -43,12 +43,12 @@ const frontSkillsItem = [
   [
     <StyledComponet key={StyledComponet} />,
     "Styled-component",
-    "컴포넌트별로 작성하여 직관적으로 확인할 수 있는 장점이 있어서 React를 사용한 프로젝트에서 사용한 경험이 있습니다.",
+    "컴포넌트별로 작성하여 직관적으로 확인할 수 있는 장점이 있어서 React를 사용한 프로젝트에서 사용했습니다.",
   ],
   [
     <TailwindCSS key={TailwindCSS} />,
     "TailwindCSS",
-    "클래스명 하나로 style을 지정할 수 있는 장점이 있어서 Nest.js를 사용한 프로젝트에서 사용한 경험이 있습니다.",
+    "클래스명 하나로 style을 지정할 수 있는 장점이 있어서 Nest.js를 사용한 프로젝트에서 사용했습니다.",
   ],
 ];
 
