@@ -24,8 +24,8 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <div className='flex lg:flex-row flex-col items-center justify-evenly lg:w-4/5 w-full'>
-            <div className='lg:w-2/5 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded'>
+          <div className='flex xl:flex-row flex-col items-center justify-between lg:w-4/5 w-full'>
+            <div className='xl:w-2/5 lg:w-3/5 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded'>
               <Image
                 src={profile}
                 alt='이선민 프로필 이미지'
@@ -46,13 +46,17 @@ export default function AboutMe() {
               <p className='leading-relaxed'>2022.04 - 2022.10</p>
               <ul className='list-disc list-inside mb-9'>
                 <li>
-                  Javascript 기반으로 학습하고, React로 프론트엔드 과정 학습
+                  2번의 팀 프로젝트를 react기반으로 만든 경험이 있고, 백엔드
+                  팀원들과 협업을 통한 웹앱 개발 방법 체득
                 </li>
                 <li>
-                  24주 동안 매일 강도 높은 과제 수행 및 페어 프로그래밍과 코드
-                  리뷰 경험
+                  웹 개발자가 반드시 알아야 할 네트워크, 알고리즘 등 기초 CS
+                  지식 학습
                 </li>
-                <li>협업 프로젝트 2회 진행</li>
+                <li>
+                  자바스크립트의 자료형, 스코프, 클로저, ES6 주요 문법, 비동기
+                  등 웹앱 개발을 위해 필요한 핵심 내용 학습
+                </li>
               </ul>
               <div className='font-semibold text-xl'>
                 덕성여자대학교 (Duksung Women’s University)
@@ -63,7 +67,6 @@ export default function AboutMe() {
 
               <p className='leading-relaxed'>2013.03 - 2018.08</p>
               <ul className='list-disc list-inside mb-9'>
-                <li>교내 성적 장학금 다수</li>
                 <li>
                   2015년 1년간 중국 교환학생 경험과 유학생 성적 우수상 수상
                 </li>
@@ -88,23 +91,23 @@ export default function AboutMe() {
               🎙왜 개발자가 되고 싶나요?
             </h3>
             <p className='mt-4 mb-8 leading-relaxed text-left'>
-              문제를 해결해나가는 과정에서 굉장한 뿌듯함을 느끼고 꾸준히
-              공부하는 것을 좋아하는 나와 잘 맞다고 생각하기에 개발자가 잘
-              어울린다고 생각합니다. 그리고 주어진 일만을 수행하는 것보다 더
-              나은 서비스를 만들고자 치열하게 고민한다는 점이 매력적이어서
-              개발자가 되고 싶습니다.
+              3년이 넘도록 물류, 무역 쪽에서 일을 하다가 경력을 인정받으면서
+              꾸준히 일을 하기 힘들다는 것을 깨달았습니다. 일을 하는 것이 삶에
+              활력이 된다고 생각했기에 자연스럽게 전직을 생각하게 되었습니다.
+              경력을 인정받으면서 꾸준히 일을 하기 위해서는 남들과 비교해서
+              경쟁력 있는 나만의 기술이 필요하다고 생각했고, 큰 용기를 내서
+              개발자의 길로 들어서게 되었습니다.
             </p>
             <h3 className='text-3xl font-bold text-left'>
               🎙어떤 개발자가 되고 싶은가요?
             </h3>
             <p className='mt-4 mb-20 leading-relaxed text-left'>
-              유저 입장에 서비스 퀄리티 향상을 위해 항상 고민하는 개발자가 되고
-              싶습니다. 이를 위해서 ‘소통’이 프론트엔드 개발자의 주요 덕목 중
-              하나라고 생각합니다. 디자이너와 백엔드 개발자 사이에 의견 차이가
-              발생할 수 있는데, 이 부분에서 프론트엔드 개발자가 중간에서 이견을
-              조율해주는 역할을 해야 한다고 생각합니다. 건강한 트러블은 더 좋은
-              조직과 서비스를 만든다고 생각하기에 여러 의견을 듣고 조율할 수
-              있는 개발자가 되고 싶습니다.
+              ‘소통’이 프론트엔드 개발자의 주요 덕목 중 하나라고 생각합니다.
+              디자이너와 백엔드 개발자 사이에 의견 차이가 발생할 수 있는데, 이
+              부분에서 프론트엔드 개발자가 중간에서 이견을 조율해주는 역할을
+              해야 한다고 생각합니다. 건강한 트러블은 더 좋은 조직과 서비스를
+              만든다고 생각하기에 여러 의견을 듣고 조율할 수 있는 개발자가 되고
+              싶습니다.
             </p>
             <div className='flex flex-col sm:flex-row sm:justify-center lg:justify-center gap-2.5'>
               <Link href='/skills' className='btn-project'>

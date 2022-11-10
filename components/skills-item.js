@@ -26,15 +26,16 @@ const frontSkillsItem = [
   [
     <Nextjs key={Nextjs} />,
     "Nextjs",
-    "초기 로딩 속도가 빠르고 검색 엔진 최적화(SEO)에 유리한 SSR에 관심이 생겨 공부하고 있습니다.",
+    "초기 로딩 속도가 빠르고 SEO에 유리한 SSR에 관심이 생겨 공부하고 있습니다.",
   ],
   [
     <Image
       src={zustand}
       alt='zustand image'
-      width={50}
-      height={50}
+      width={60}
+      height={60}
       key={zustand}
+      className='max-w-none'
     />,
     "Zustand",
     "사용하기 쉽고, 불필요한 렌더링을 줄일 수 있는 Zustand를 사용하여 상태관리를 한 경험이 있습니다.",
@@ -42,12 +43,12 @@ const frontSkillsItem = [
   [
     <StyledComponet key={StyledComponet} />,
     "Styled-component",
-    "컴포넌트별로 CSS를 작성하여 직관적으로 확인할 수 있는 장점이 있어서 React를 사용한 프로젝트에서 사용한 경험이 있습니다.",
+    "컴포넌트별로 작성하여 직관적으로 확인할 수 있는 장점이 있어서 React를 사용한 프로젝트에서 사용한 경험이 있습니다.",
   ],
   [
     <TailwindCSS key={TailwindCSS} />,
     "TailwindCSS",
-    "html에서 클래스 명 하나로 style을 지정할 수 있는 장점이 있어서 Nest.js를 사용한 프로젝트에서 tailwind CSS를 사용한 경험이 있습니다.",
+    "클래스명 하나로 style을 지정할 수 있는 장점이 있어서 Nest.js를 사용한 프로젝트에서 사용한 경험이 있습니다.",
   ],
 ];
 

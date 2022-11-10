@@ -23,20 +23,22 @@ export default function Skills() {
               좋은 유저 경험을 위한 기능과 디자인에 집중합니다.
             </p>
           </div>
-          <div className='flex flex-wrap lg:w-3/5 sm:mx-auto sm:mb-2'>
+          <div className='flex flex-wrap lg:w-3/5 md:mx-auto sm:mb-2'>
             {frontSkillsItem.map((a, idx) => (
-              <div className='p-2 sm:w-1/2 w-full relative' key={idx}>
-                <div className='skill-cover'>
+              <div className='p-2 xl:w-1/2 w-full relative' key={idx}>
+                <div className='skill-text'>
                   {a[0]}
                   <span className='title-font font-medium text-xl ml-4 dark:text-black'>
                     {a[1]}
                   </span>
                 </div>
-                <div className='skill-text'>
-                  <h1 className='title-font text-lg font-medium dark:text-gray-900 mb-3'>
-                    {a[1]}
+                <div className='skill-cover'>
+                  <h1 className='title-font font-medium text-xl m-4 dark:text-black'>
+                    {a[0]}
                   </h1>
-                  <p className='leading-relaxed'>{a[2]}</p>
+                  <p className='leading-relaxed ml-3 p-0 dark:text-black'>
+                    {a[2]}
+                  </p>
                 </div>
               </div>
             ))}
@@ -55,18 +57,20 @@ export default function Skills() {
           </div>
           <div className='flex flex-wrap lg:w-3/5 sm:mx-auto sm:mb-2'>
             {etcSkillsItem.map((a, idx) => (
-              <div className='p-2 sm:w-1/2 w-full relative' key={idx}>
-                <div className='skill-cover'>
+              <div className='p-2 xl:w-1/2 w-full relative' key={idx}>
+                <div className='skill-text'>
                   {a[0]}
                   <span className='title-font font-medium text-xl ml-4 dark:text-black'>
                     {a[1]}
                   </span>
                 </div>
-                <div className='skill-text'>
-                  <h1 className='title-font text-lg font-medium dark:text-gray-900 mb-3'>
-                    {a[1]}
+                <div className='skill-cover'>
+                  <h1 className='title-font text-xl font-medium dark:text-gray-900 m-4'>
+                    {a[0]}
                   </h1>
-                  <p className='leading-relaxed'>{a[2]}</p>
+                  <p className='leading-relaxed ml-3 p-0 dark:text-black'>
+                    {a[2]}
+                  </p>
                 </div>
               </div>
             ))}
