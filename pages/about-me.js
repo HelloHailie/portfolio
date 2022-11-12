@@ -24,8 +24,8 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <div className='flex xl:flex-row flex-col items-center justify-between lg:w-4/5 w-full'>
-            <div className='xl:w-2/5 lg:w-3/5 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded'>
+          <div className='flex xl:flex-row flex-col items-center gap-10 lg:w-4/5 w-full'>
+            <div className='xl:w-3/5 lg:w-3/5 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded'>
               <Image
                 src={profile}
                 alt='이선민 프로필 이미지'
