@@ -2,9 +2,9 @@
 
 ### 📚사용한 기술
 
-- Next.js
+- Next.js :
   처음 방문했을 때 빠르게 로딩이 되면서, 포트폴리오가 검색이 잘 되면 좋겠다는 생각에 Next.js를 사용하였습니다.
-- tailwind CSS
+- tailwind CSS :
   쉽게 반응형 웹을 만들고자 했기 때문에 tailwind CSS를 사용했습니다. class에 설정을 하면 되기 때문에 파일을 따로 설정할 필요도 없고, 화면을 위,아래로 번갈아가면서 개발하지 않아도 되서 좋았습니다.
 
 ---
@@ -80,6 +80,8 @@ export async function getStaticProps() {
 }
 ```
 
+---
+
 ### 💡반복되는 코드 줄이기
 
 기술스택 페이지는 반복되는 코드가 많았습니다.
@@ -124,6 +126,8 @@ const frontSkillsItem = [
   ))}
 </div>
 ```
+
+---
 
 ### 💡다크 모드
 
@@ -187,6 +191,8 @@ export default function DarkModeBtn() {
 }
 ```
 
+---
+
 ### 💡Class를 사용하여 테마 설정
 
 - Next.js 앱이 클래스를 사용하여 테마를 설정할 수 있도록 속성을 class로 변경하여 사용했습니다.
@@ -222,6 +228,8 @@ module.exports = {
   plugins: [],
 };
 ```
+
+---
 
 ### 💡반응형 웹
 
