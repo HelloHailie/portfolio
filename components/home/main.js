@@ -12,7 +12,7 @@ export default function Main() {
                 Frontend-Developer
               </p>
 
-              <h1 className='text-black-800 text-4xl sm:text-5xl md:text-7xl font-bold mb-10 md:mb-20 pt-5'>
+              <h1 className='text-black-800 text-4xl sm:text-5xl md:text-6xl font-bold mb-10 md:mb-20 pt-5'>
                 프론트엔드 개발자 이선민
               </h1>
 
